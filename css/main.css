@@ -1,0 +1,58 @@
+:root {
+  /* dimension */
+  --width-full: 100%;
+  --width-12col: 1200px;
+
+  /*grid settings*/
+  --grid-gap: 10px;
+  --padding-default: 20px;
+
+  /*colors*/
+  --background-color-light: #DCEEF2;
+  --background-color-dark-bg: #111111;
+  --color-darkblue: #134D70;
+  --color-blue: #126DA6;
+  --color_lightblue: #9AC7D9;
+  --color-lightgreen: #ADD9C5;
+  --color-green: #39B865;
+}
+
+/* reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: var(--width-full);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: var(--background-color-light);
+}
+
+.navigation_bar {
+  width: var(--width-12col);
+  height: 100px;
+  padding: 30px 0 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.navigation_fixed {
+  position: static;
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.navigation_bar_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation_bar_menu a {
+  text-decoration: none;
+  color: var(--background-color-dark-bg);
+}
