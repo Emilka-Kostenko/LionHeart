@@ -156,7 +156,7 @@ body, html {
 }
 
 .brochure_image {
-  background-image: url(/img/brochure_the_brothers_lionheart.png);
+  background-image: url(./img/brochure_the_brothers_lionheart.png);
   background-repeat: no-repeat;
   grid-column: 1 / span 6;
   grid-row: 2 / span 5;
