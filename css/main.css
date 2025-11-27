@@ -156,7 +156,7 @@ body, html {
 }
 
 .brochure_image {
-  background-image: url(/img/brochure_the_brothers_lionheart.png);
+  background-image: url(img/brochure_the_brothers_lionheart.png);
   background-repeat: no-repeat;
   grid-column: 1 / span 6;
   grid-row: 2 / span 5;
@@ -205,7 +205,7 @@ body, html {
 }
 
 .brochure_share_icon {
-  background-image: url(/img/share_icon.png);
+  background-image: url(img/share_icon.png);
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;
@@ -225,17 +225,17 @@ body, html {
 }
 
 .brochure_facebook_button {
-  background-image: url(/img/button_facebook.png);
+  background-image: url(img/button_facebook.png);
 }
 
 .brochure_twitter_button {
-  background-image: url(/img/button_twitter.png);
+  background-image: url(img/button_twitter.png);
 }
 
 .brochure_instagram_button {
-  background-image: url(/img/button_instagram.png);
+  background-image: url(img/button_instagram.png);
 }
 
 .brochure_whatsapp_button {
-  background-image: url(/img/button_whatsapp.png);
+  background-image: url(img/button_whatsapp.png);
 }
