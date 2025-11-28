@@ -32,6 +32,11 @@
   cursor: pointer;
 }
 
+.base_button a {
+  text-decoration: none;
+  color: var(--background-color-light);
+}
+
 /* reset css*/
 * {
   margin: 0;
@@ -46,7 +51,7 @@ body, html {
   background-color: var(--background-color-light);
 }
 
-/* Navigation Bar Start */
+/* Top Navigation Bar Start */
 
 .navigation_bar_background {
   width: var(--width-full);
@@ -81,7 +86,62 @@ body, html {
   color: var(--background-color-light);
 }
 
-/* Navigation Bar End */
+/* Top Navigation Bar End */
+
+/* Bottom Navigation Bar Start */
+
+.bottom_navigation_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: var(--width-full);
+  height: 70px;
+  background-color: var(--color-darkblue);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.bottom_navigation_bar_grid {
+  width: var(--width-12col);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.bottom_navigation_bar_social_common{
+  height: 50px;
+  width: 50px;
+}
+
+.bottom_navigation_bar_social {
+  grid-column: 2 / span 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.bottom_navigation_bar_flags {
+  grid-column: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+  
+.bottom_navigation_bar_flag_common {
+  width: 36px;
+  height: 26px;
+}
+
+.bottom_navigation_bar_grid button {
+  grid-column: 10 / span 2;
+}
+
+
+/* Bottom Navigation Bar End */
 
 /* Slideshow Start */
 
@@ -92,7 +152,7 @@ body, html {
 }
 
 .slideshow {
-  display: none; /* Hide the images by default */
+  display: none; /* Hide images */
 }
 
 /* Next & previous buttons */
@@ -111,13 +171,11 @@ body, html {
   user-select: none;
 }
 
-/* Position of the "next button" */
 .next {
   right: 10%;
   border-radius: 3px;
 }
 
-/* Position of the "before button" */
 .prev {
   left: 10%;
   border-radius: 3px;
@@ -159,8 +217,6 @@ body, html {
 }
 
 .brochure_image {
-  background-image: url(../img/brochure_the_brothers_lionheart.png);
-  background-repeat: no-repeat;
   grid-column: 1 / span 6;
   grid-row: 2 / span 5;
 }
@@ -209,8 +265,6 @@ body, html {
 }
 
 .brochure_share_icon {
-  background-image: url(../img/share_icon.png);
-  background-repeat: no-repeat;
   height: 16px;
   width: 16px;
   margin-right: 10px;
@@ -226,22 +280,7 @@ body, html {
   background-repeat: no-repeat;
   padding: 0 20px 0 20px;
   margin-left: 10px;
-}
-
-.brochure_facebook_button {
-  background-image: url(../img/button_facebook.png);
-}
-
-.brochure_twitter_button {
-  background-image: url(../img/button_twitter.png);
-}
-
-.brochure_instagram_button {
-  background-image: url(../img/button_instagram.png);
-}
-
-.brochure_whatsapp_button {
-  background-image: url(../img/button_whatsapp.png);
+  cursor: pointer;
 }
 
 /* Brochure End */
@@ -305,6 +344,9 @@ body, html {
   padding-left: 40px;
   border-color: transparent;
   border-radius: 5px;
+  background-image: url(../img/email_icon.png);
+  background-repeat: no-repeat;
+  background-position: 2% center;
 }
 
 .newsletter_subscribe_section ::placeholder {
@@ -324,7 +366,7 @@ body, html {
 
 .footer_section {
   background-color: var(--color-darkblue);
-  height: 150px;
+  height: 200px;
   color: var(--background-color-light);
 }
 
