@@ -18,6 +18,20 @@
   --color-green: #39B865;
 }
 
+/* base button*/
+
+.base_button {
+  text-transform: uppercase;
+  background-color: #39B865;
+  border-color: transparent;
+  border-radius: 33px;
+  width: 160px;
+  height: 50px;
+  color: var(--background-color-light);
+  box-shadow: 5px 5px 15px 0 var(--background-color-dark-transparent);
+  cursor: pointer;
+}
+
 /* reset css*/
 * {
   margin: 0;
@@ -65,17 +79,6 @@ body, html {
 .navigation_bar_menu a {
   text-decoration: none;
   color: var(--background-color-light);
-}
-
-.navigation_bar_menu button {
-  text-transform: uppercase;
-  background-color: #39B865;
-  border-color: transparent;
-  border-radius: 33px;
-  width: 160px;
-  height: 50px;
-  color: var(--background-color-light);
-  box-shadow: 5px 5px 15px 0 var(--background-color-dark-transparent);
 }
 
 /* Navigation Bar End */
@@ -142,7 +145,7 @@ body, html {
 
 .brochure_section {
   width: var(--width-full);
-  height: fit-content;
+  height: 950px;
 }
 
 .brochure_main {
@@ -151,7 +154,7 @@ body, html {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: var(--grid-gap);
 }
 
@@ -194,6 +197,7 @@ body, html {
   height: 50px;
   color: var(--background-color-light);
   box-shadow: 5px 5px 10px 0 var(--background-color-dark-transparent);
+  cursor: pointer;
 }
 
 .brochure_social_buttons {
@@ -239,3 +243,117 @@ body, html {
 .brochure_whatsapp_button {
   background-image: url(../img/button_whatsapp.png);
 }
+
+/* Brochure End */
+
+/* Newsletter Start */
+
+.newsletter_section {
+  height: fit-content;
+  width: var(--width-full);
+  background-color: var(--color-lightgreen);
+}
+
+.newsletter_grid {
+  margin: 0 auto;
+  width: var(--width-12col);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: var(--grid-gap);
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 30px 0;
+}
+
+.newsletter_common {
+  grid-column: 4 / span 8;
+  text-align: center;
+}
+
+.newsletter_text {
+  grid-row: 1 / span 2;
+  color: var(--color-darkblue);
+  font-size: 14px;
+}
+
+.newsletter_text h2 {
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+.newsletter_stayconnected {
+  text-transform: uppercase;
+  color: var(--color-green);
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+.newsletter_subscribe_section {
+  grid-row: 3;
+}
+
+.newsletter_subscribe_section button {
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.newsletter_subscribe_section input {
+  width: 450px;
+  height: 45px;
+  padding-left: 40px;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.newsletter_subscribe_section ::placeholder {
+  color: var(--background-color-dark-bg);
+  font-size: 13px;
+}
+
+.newsletter_unsubscribe {
+  grid-row: 4;
+  color: var(--color-darkblue);
+  font-size: 14px;
+}
+
+/* Newsletter End */
+
+/* Footer Section Start */
+
+.footer_section {
+  background-color: var(--color-darkblue);
+  height: 150px;
+  color: var(--background-color-light);
+}
+
+.footer_main {
+  width: var(--width-12col);
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  padding-top: 40px;
+}
+
+.footer_main_text {
+  display: flex;
+  justify-content: space-evenly;
+  grid-row: 1;
+}
+
+.footer_main_text a {
+  text-decoration: none;
+  color: var(--background-color-light);
+}
+
+.footer_main_copyright {
+  color: #DCEEF280;
+  display: flex;
+  justify-content: center;
+  grid-row: 2;
+  font-size: 14px;
+}
+
+/* Footer Section End */
