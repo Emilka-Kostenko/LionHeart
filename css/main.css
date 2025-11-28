@@ -399,3 +399,64 @@ body, html {
 }
 
 /* Footer Section End */
+
+
+
+
+
+
+/* About Page Start */
+
+/* Video Section Start */
+
+.video_section {
+  width: var(--width-full);
+  background-color: var(--color_lightblue);
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video_section_grid {
+  width: var(--width-12col);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video_section_background {
+  width: 941px;
+  height: 483px;
+}
+
+.video_section_play_icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+}
+
+/* Video Section End */
+
+/* About the Play Start */
+
+.about_the_play_text {
+  grid-row: 2;
+  grid-column: 8 / span 4;
+}
+
+.about_the_play_text h2 {
+  padding-bottom: 30px;
+}
+
+.about_the_play_text p {
+  font-size: 16px;
+}
+
+.about_the_play_text_highlight {
+  font-weight: 900;
+  font-size: 12px;
+  padding-top: 14px;
+}
