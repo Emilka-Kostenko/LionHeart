@@ -526,6 +526,9 @@ body, html {
 .slideshow_about {
   width: var(--width-full);
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slideshow_about_grid {
@@ -533,13 +536,9 @@ body, html {
   margin: 0 auto;
 }
 
-.gallery {
-  background-color: #eeeeee;
-}
-
 .gallery-cell {
-  width: 66%;
-  height:200px;
+  width: fit-content;
+  height: 200px;
   margin: 0 10px 0 0;
 }
 
