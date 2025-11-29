@@ -514,11 +514,13 @@ body, html {
 .meet_the_characters_character_photo_one {
   position: absolute;
   opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .meet_the_characters_character_photo_one:hover {
   position: absolute;
   opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 /* Slideshow Section */
