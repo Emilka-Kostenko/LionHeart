@@ -26,3 +26,10 @@ function slideshow(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+let flkty = new Flickity('.main-gallery', {
+  // option
+  cellAlign: 'left',
+  contain: true,
+  freeScroll: true
+})

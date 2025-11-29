@@ -523,3 +523,30 @@ body, html {
 
 /* Slideshow Section */
 
+.slideshow_about {
+  width: var(--width-full);
+  height: 400px;
+}
+
+.slideshow_about_grid {
+  width: var(--width-12col);
+  margin: 0 auto;
+}
+
+.gallery {
+  background-color: #eeeeee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height:200px;
+  margin: 0 10px 0 0;
+}
+
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color:#fff;
+}
