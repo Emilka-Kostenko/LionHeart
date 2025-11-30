@@ -527,15 +527,38 @@ body, html {
 
 .slideshow_about {
   width: var(--width-full);
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .slideshow_about_grid {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.slideshow_about_title {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--color-darkblue);
+}
+
+.slideshow_about_title p {
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px
+}
+
+.slideshow_about_main {
   width: var(--width-12col);
   margin: 0 auto;
+  grid-row: 2;
 }
 
 .gallery-cell {
