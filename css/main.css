@@ -707,8 +707,12 @@ body, html {
   }
   
   .newsletter_subscribe_section input {
-    width: 300px;
+    width: 250px;
     margin-bottom: 10px;
+  }
+
+  .newsletter_subscribe_section ::placeholder {
+    font-size: 10px;
   }
 
   .footer_main_text {
