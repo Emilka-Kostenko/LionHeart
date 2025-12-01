@@ -704,6 +704,11 @@ body, html {
 
   .newsletter_grid {
     padding: 0;
+    grid-gap: 0;
+  }
+
+  .newsletter_common {
+    grid-column: 2 / span 10;
   }
   
   .newsletter_subscribe_section input {
