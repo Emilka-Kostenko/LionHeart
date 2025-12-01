@@ -2,6 +2,9 @@
   /* dimension */
   --width-full: 100%;
   --width-12col: 1200px;
+  --width-tablet: 1000px;
+  --width-phone: 500px;
+
 
   /*grid settings*/
   --grid-gap: 10px;
@@ -30,6 +33,7 @@
   color: var(--background-color-light);
   box-shadow: 5px 5px 15px 0 var(--background-color-dark-transparent);
   cursor: pointer;
+  font-weight: 700;
 }
 
 .base_button a {
@@ -573,4 +577,145 @@ body, html {
   line-height: 200px;
   font-size: 80px;
   color:#fff;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+
+@media (width <= 1000px) {
+
+  .navigation_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .navigation_bar_menu a{
+    padding-right: 20px;
+  }
+
+  .brochure_main {
+    width: var(--width-full);
+  }
+
+  .brochure_text {
+    grid-column: 8 / span 4;
+  }
+
+  .brochure_text h2{
+    font-size: 30px;
+  }
+
+  .brochure_text p{
+    font-size: 16px;
+  }
+
+  .brochure_dowload_button {
+    grid-column: 8 / span 3;
+  }
+
+  .brochure_common_button {
+    height: 35px;
+    width: 35px;
+  }
+
+  .newsletter_grid {
+    width: var(--width-full);
+  }
+
+  .footer_main {
+    width: var(--width-full);
+  }
+}
+
+@media (width <= 500px) {
+
+  .base_button {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .bottom_navigation_bar_social_common {
+    height: 30px;
+    width: 30px;
+  }
+
+  .bottom_navigation_bar_social {
+    grid-column: 2 / span 4;
+  }
+
+  .bottom_navigation_bar_flag_common {
+    height: 16px;
+    width: 26px;
+  }
+
+  .bottom_navigation_bar_flags {
+    grid-column: 7 / span 2;
+  }
+
+  .navigation_bar{
+    font-size: 13px;
+  }
+
+  .brochure_section {
+    height: 800px;
+  }
+
+  .brochure_main {
+    grid-template-rows: repeat(4 , 1fr);
+    height: 750px;
+  }
+
+  .brochure_image {
+    grid-row: 1;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brochure_image img {
+    height: 400px;
+  }
+
+  .brochure_text {
+    grid-row: 2;
+    grid-column: 2 / span 10;
+  }
+
+  .brochure_dowload_button {
+    grid-row: 3;
+    grid-column: 2 / span 10;
+  }
+
+  .brochure_social_buttons {
+    grid-row: 4;
+    grid-column: 3 / span 10;
+  }
+  
+  .brochure_text h2 {
+    font-size: 25px;
+  }
+
+  .brochure_text p {
+    font-size: 14px;
+  }
+
+  .newsletter_grid {
+    padding: 0;
+  }
+  
+  .newsletter_subscribe_section input {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .footer_main_text {
+    font-size: 14px;
+  }
+
+  .footer_main_copyright {
+    font-size: 12px;
+  }
 }
