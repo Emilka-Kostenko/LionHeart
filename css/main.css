@@ -691,7 +691,7 @@ body, html {
 
   .brochure_social_buttons {
     grid-row: 4;
-    grid-column: 3 / span 10;
+    grid-column: 2 / span 10;
   }
   
   .brochure_text h2 {
@@ -708,11 +708,11 @@ body, html {
   }
 
   .newsletter_common {
-    grid-column: 2 / span 10;
+    grid-column: 1 / span 12;
   }
   
   .newsletter_subscribe_section input {
-    width: 250px;
+    width: 50%;
     margin-bottom: 10px;
   }
 
