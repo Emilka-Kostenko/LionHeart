@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
   /* dimension */
   --width-full: 100%;
@@ -41,6 +43,7 @@
   color: var(--background-color-light);
 }
 
+
 /* reset css*/
 * {
   margin: 0;
@@ -51,9 +54,25 @@
 
 body, html {
   width: var(--width-full);
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   position: relative;
   background-color: var(--background-color-light);
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+button, a {
+  font-family: "Cinzel", serif;
 }
 
 /* Top Navigation Bar Start */
@@ -202,6 +221,21 @@ body, html {
   to {opacity: 1}
 }
 
+.slideshow_text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color-light);
+  width: 350px;
+  right: 15%;
+  top: 30%;
+}
+
+.slideshow_text h2 {
+  text-align: end;
+  padding-bottom: 10px;
+}
+
 /* Slideshow End */
 
 /* Brochure Start */
@@ -227,14 +261,9 @@ body, html {
 }
 
 .brochure_text {
-  grid-column: 8 / span 5;
+  grid-column: 7 / span 6;
   grid-row: 3;
   color: var(--color-darkblue);
-}
-
-.brochure_text h2 {
-  font-size: 45px;
-  padding-bottom: 15px;
 }
 
 .brochure_text p {
@@ -243,7 +272,7 @@ body, html {
 }
 
 .brochure_dowload_button {
-  grid-column: 9 / span 3;
+  grid-column: 8 / span 3;
   grid-row: 4;
   display: flex;
   align-items: center;
@@ -485,7 +514,9 @@ body, html {
 
 .meet_the_characters_title {
   grid-row: 1;
-  grid-column: 6 / span 3;
+  grid-column: 1 / span 12;
+  display: flex;
+  justify-content: center;
   padding-top: 15px;
   text-transform: uppercase;
 }
@@ -786,6 +817,44 @@ padding: 95px
   .footer_main {
     width: var(--width-full);
   }
+
+  .slideshow_text h1 {
+    font-size: 35px;
+  }
+
+  .slideshow_text h2 {
+    font-size: 25px;
+  }
+
+  .slideshow_text p {
+    font-size: 14px;
+  }
+
+  /* About page  */
+  
+  .meet_the_characters_section {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .meet_the_characters_grid {
+    width: var(--width-full);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .meet_the_characters_characters {
+    grid-row: 2 / span 2;
+    display: grid;
+    justify-content:space-evenly;
+  }
+
+  .meet_the_characters_character_sophia, .meet_the_characters_character_jane {
+    grid-row: 3;
+  }
+
+  .slideshow_about_grid, .slideshow_about_main {
+    width: 90%;
+  }
 }
 
 @media (width <= 500px) {
@@ -795,7 +864,7 @@ padding: 95px
     height: 40px;
     font-size: 12px;
   }
-  
+
   .bottom_navigation_bar_social_common {
     height: 30px;
     width: 30px;
@@ -822,9 +891,36 @@ padding: 95px
     height: 800px;
   }
 
+  .slideshow_text {
+    width: 200px;
+    right: 25%;
+    top: 25%;
+  }
+
+  .slideshow_text p h2 h1 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .newsletter_text h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
   .brochure_main {
-    grid-template-rows: repeat(4 , 1fr);
-    height: 750px;
+    grid-template-rows: repeat(3 , auto);
+    height: fit-content;
+    padding-bottom: 10px;
   }
 
   .brochure_image {
@@ -850,7 +946,9 @@ padding: 95px
 
   .brochure_social_buttons {
     grid-row: 4;
-    grid-column: 2 / span 10;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
   }
   
   .brochure_text h2 {
@@ -885,5 +983,41 @@ padding: 95px
 
   .footer_main_copyright {
     font-size: 12px;
+  }
+
+  /* About Page */
+
+  .video_section_background {
+    width: 90%;
+    height: 90%;
+  }
+
+  .video_section {
+    height: 400px;
+  }
+  
+  .brochure_section_about {
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  .meet_the_characters_section {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .meet_the_characters_grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .meet_the_characters_characters {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slideshow_about_main {
+    width: 100%;
   }
 }
