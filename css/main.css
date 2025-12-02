@@ -579,6 +579,165 @@ body, html {
   color:#fff;
 }
 
+/* tickets page style */
+
+.upcoming-theatre-events-calendar-section{
+  background-color: var(--color_lightblue);
+  
+}
+
+.upcoming-theatre-events-calendar{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto;
+column-gap: var(--grid-gap);
+padding-top: 95px;
+padding: 95px
+}
+
+.safety-tickets{
+  grid-column: 2 / span 3;
+  background-color: #ADD9C5;
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+  
+
+
+
+}
+.safety-tickets h2{
+  font-size: 30px;
+  color: var(--color-darkblue);
+  padding: 0 15px 0 15px;
+}
+
+.upcoming-theatre-events-calendar-february26{
+  display: grid;
+  grid-column: 5 / span 7;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 6;
+  background-color: #fff;
+ 
+
+}
+
+.calendar-month-name {
+  background-color: var(--background-color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1 / 8;
+  font-size: 30px;
+}
+
+.calendar-month-name h2{
+  font-size: 30px;
+  padding: 26px 0 20px 0;
+  color: var(--color-darkblue);
+}
+ .row1{
+  display: grid;
+  width:auto;
+  grid-row: 2;
+  grid-column: 1 / 8;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row1 .calendar-cell{
+  border-top: none;
+}
+
+.row1 div {
+  grid-column: span 1 ;
+}
+.row2{
+  display: grid;
+  width:auto;
+  grid-row: 3;
+  grid-column: 1 / 8;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row2 div {
+  grid-column: span 1 ;
+}
+
+.row3{
+  display: grid;
+  width:auto;
+  grid-row: 4;
+  grid-column: 1 / 8;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row3 div {
+  grid-column: span 1 ;
+}
+
+.row4{
+  display: grid;
+  width:auto;
+  grid-row: 5;
+  grid-column: 1 / 8;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row4 div {
+  grid-column: span 1 ;
+}
+
+.row5{
+  display: grid;
+  width:auto;
+  grid-row: 6;
+  grid-column: 1 / 8;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row5 div {
+  grid-column: span 1 ;
+}
+
+
+.calendar-cell{
+  border: #111111 solid 1px;
+  display: flex;
+  justify-content: right;
+  align-items:flex-end;
+  
+}
+
+.left-row{
+  border-left: none !important;
+}
+.right-row{
+  border-right: none !important;
+}
+
+.calendar-cell p{
+  padding: 50px 10px 10px 65px;
+  color: var(--color-darkblue); 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar-cell-bottom-tow{
+  border: #111111 solid 1px;
+  display: flex;
+  border-bottom: none;
+  justify-content: right;
+  align-items:flex-end;
+  padding: 50px 10px 10px 65px;
+  color: #828282;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
 /* Responsive Design */
 
 /* Tablet */
