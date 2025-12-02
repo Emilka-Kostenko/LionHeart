@@ -705,7 +705,7 @@ button, a {
     height: 40px;
     font-size: 12px;
   }
-  
+
   .bottom_navigation_bar_social_common {
     height: 30px;
     width: 30px;
@@ -734,12 +734,12 @@ button, a {
 
   .slideshow_text {
     width: 200px;
-    right: 30%;
-    top: 15%;
+    right: 25%;
+    top: 25%;
   }
 
   .slideshow_text h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .slideshow_text h2 {
@@ -747,12 +747,29 @@ button, a {
   }
 
   .slideshow_text p {
+    display: none;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .newsletter_text h2 {
+    font-size: 15px;
+  }
+
+  p {
     font-size: 10px;
   }
 
   .brochure_main {
-    grid-template-rows: repeat(4 , 1fr);
-    height: 750px;
+    grid-template-rows: repeat(3 , auto);
+    height: fit-content;
+    padding-bottom: 10px;
   }
 
   .brochure_image {
@@ -778,7 +795,9 @@ button, a {
 
   .brochure_social_buttons {
     grid-row: 4;
-    grid-column: 2 / span 10;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
   }
   
   .brochure_text h2 {
@@ -827,7 +846,8 @@ button, a {
   }
   
   .brochure_section_about {
-    height: 1000px;
+    height: fit-content;
+    padding-bottom: 10px;
   }
 
   .meet_the_characters_section {
