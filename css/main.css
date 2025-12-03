@@ -1055,7 +1055,7 @@ details p {
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 600px) {
 
   .base_button {
     width: 120px;
