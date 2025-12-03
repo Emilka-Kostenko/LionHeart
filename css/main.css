@@ -744,7 +744,33 @@ padding: 95px 0 95px 0;
   display: flex;
   justify-content: right;
   align-items:flex-end;
+  position: relative;
   
+}
+
+.calendar-cell-times {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.calendar-time-button {
+  background-color: var(--background-color-light);
+  color: var(--color-darkblue);
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.calendar-time-button:hover {
+  background-color: var(--color-darkblue);
 }
 
 .left-row{
