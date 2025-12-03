@@ -637,17 +637,27 @@ padding: 95px 0 95px 0;
   grid-column: 2 / span 3;
   background-color: #ADD9C5;
   display: flex;
-  justify-content: center;
-  padding-top: 26px;
-  
-
-
-
+  flex-direction: column;
+  padding: 26px 28px 0 28px;
 }
+
+.safety-tickets-item{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: var(--color-darkblue);
+  margin-top: 20px;
+  
+}
+.safety-tickets-item svg{
+  margin-right: 15px;
+  height: 24px;
+  align-self: flex-start;}
+
 .safety-tickets h2{
   font-size: 30px;
   color: var(--color-darkblue);
-  padding: 0 15px 0 15px;
 }
 
 .upcoming-theatre-events-calendar-february26{
