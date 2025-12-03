@@ -1095,7 +1095,7 @@ details p {
     top: 25%;
   }
 
-  .slideshow_text p h2 h1 {
+  .slideshow_text p, h2, h1 {
     display: none;
   }
 
