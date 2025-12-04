@@ -186,6 +186,10 @@ button, a {
   width: var(--width-full);
 }
 
+.slideshow_background img {
+  width: var(--width-full);
+}
+
 .slideshow_text {
   position: absolute;
   display: flex;
@@ -399,11 +403,6 @@ button, a {
 }
 
 /* Footer Section End */
-
-
-
-
-
 
 /* About Page Start */
 
