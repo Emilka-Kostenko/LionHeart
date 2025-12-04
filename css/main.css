@@ -182,50 +182,8 @@ button, a {
   margin: auto;
 }
 
-.slideshow {
-  display: none; /* Hide images */
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: var(--color-green);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 10%;
-  border-radius: 3px;
-}
-
-.prev {
-  left: 10%;
-  border-radius: 3px;
-}
-
-/* Add background when hovered */
-.prev:hover, .next:hover {
-  background-color: var(--background-color-light);
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.slideshow_background {
+  width: var(--width-full);
 }
 
 .slideshow_text {
