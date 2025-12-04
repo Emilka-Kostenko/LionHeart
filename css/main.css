@@ -598,7 +598,7 @@ padding: 95px 0 95px 0;
   background-color: #ADD9C5;
   display: flex;
   flex-direction: column;
-  padding: 26px 28px 0 28px;
+  padding: 26px 28px 26px 28px;
 }
 
 .safety-tickets-item{
@@ -914,18 +914,18 @@ column-gap: var(--grid-gap);
     color: white;
 }
 
-/* Prevent default triangle */
+
 summary::marker {
     display: none;
 }
 
-/* SVG arrow */
+
  .arrow {
     transition: transform 0.3s ease;
 }
 
 
-/* Rotate when open */
+
 details[open] .arrow {
     transform: rotate(180deg);
 }
@@ -1026,7 +1026,34 @@ details p {
   .slideshow_about_grid, .slideshow_about_main {
     width: 90%;
   }
+
+  /* ticket page */
+
+
 }
+@media (width <= 830px) {
+  .upcoming-february-calendar-shows{
+    grid-row: 1;
+    grid-column: 2 / span 10;
+    
+  }
+
+  .safety-tickets{
+    grid-row: 2;
+    grid-column: 2 / span 10;
+    margin-top: 20px;
+  }
+
+  .upcoming-theatre-events-calendar h2
+  {
+    font-size: 30px;
+    
+  }
+   .upcoming-theatre-events-calendar p
+  {
+    font-size: 20px;
+     
+  }
 
 @media (width <= 600px) {
 
@@ -1068,7 +1095,7 @@ details p {
     top: 25%;
   }
 
-  .slideshow_text p, h2, h1 {
+  .slideshow_text p, .slideshow_text h2, .slideshow_text h1 {
     display: none;
   }
 
@@ -1191,4 +1218,5 @@ details p {
   .slideshow_about_main {
     width: 100%;
   }
+}
 }
