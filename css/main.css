@@ -73,6 +73,8 @@ h2 {
   text-transform: uppercase;
 }
 
+
+
 h3 {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
@@ -618,7 +620,7 @@ padding: 95px 0 95px 0;
   color: var(--color-darkblue);
 }
 
-.upcoming-theatre-events-calendar-february26{
+/* .upcoming-theatre-events-calendar-february26{
   display: grid;
   grid-column: 5 / span 7;
   grid-template-columns: repeat(7, 1fr);
@@ -765,7 +767,112 @@ padding: 95px 0 95px 0;
   color: #828282;
   font-size: 20px;
   font-weight: bold;
+} */
+
+.upcoming-february-calendar-shows{
+  grid-column: 5 / span 7;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
 }
+
+.upcoming-february-calendar-shows th,
+.upcoming-february-calendar-shows td{
+  width: calc(100% / 7);
+  
+  overflow: hidden;
+}
+
+.upcoming-february-calendar-shows thead tr{
+  background-color: var(--background-color-light);
+  color: var(--color-darkblue);
+  
+}
+.upcoming-february-calendar-shows h2{
+  padding: 26px 0 26px 0;
+}
+
+tbody{
+  background-color: #fff;
+
+}
+
+tbody th, tbody td{
+  border: var(--color-darkblue) solid 2px;
+}
+
+.week-days{
+  text-transform: uppercase;
+  font-weight: regular;
+  text-align: center;
+  
+}
+
+table a{
+  text-decoration: none;
+  color: var(--color-darkblue);
+  font-size: 12px;
+  background-color: var(--background-color-light);
+  border-radius: 10px;
+  padding: 3px 8px 3px 8px;
+  margin-top: 5px;
+  
+}
+
+.calendar-date-with-time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar-date-without-time{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.calendar-date>div{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.calendar-date {
+  position: relative;
+  padding: 0;
+}
+
+.calendar-date-without-time {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.calendar-date-with-time span{
+  justify-self: end;
+  padding: 0 12px 8px 0;
+}
+
+
+
+td span{
+  align-self: end;
+  padding: 0 12px 8px 0;
+}
+
+
+.weekday{
+  padding: 10px 0 10px 0;
+}
+
+.other-month{
+  background-color: #ededed;
+  color: #828282;
+}
+  
+
+
+
 
 /* Helpful info section */
 
