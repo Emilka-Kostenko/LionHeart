@@ -1055,7 +1055,36 @@ details p {
      
   }
 
+}
+
+@media (width >= 601px){
+  .upcoming-february-calendar-shows-phone{
+    display: none;
+  }
+}
+
 @media (width <= 600px) {
+/* tickets page start */
+  .upcoming-february-calendar-shows-phone{
+    grid-column: 3 / 11;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .calendar-booking{
+    text-wrap: nowrap;
+  }
+  .upcoming-february-calendar-shows-phone td{
+    padding: 0 5px 0 5px;
+  }
+  .upcoming-february-calendar-shows-phone thead tr{
+    background-color: var(--background-color-light);
+    color: var(--color-darkblue);
+  }
+/* tickets page end */
+
+  .upcoming-february-calendar-shows{
+    display: none;
+  }
 
   .base_button {
     width: 120px;
@@ -1218,5 +1247,4 @@ details p {
   .slideshow_about_main {
     width: 100%;
   }
-}
 }
