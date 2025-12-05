@@ -529,10 +529,11 @@ button, a {
 
 .slideshow_about {
   width: var(--width-full);
-  height: 350px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 0 50px 0;
 }
 
 .slideshow_about_grid {
@@ -564,8 +565,8 @@ button, a {
 }
 
 .gallery-cell {
-  width: fit-content;
-  height: 200px;
+  width: 66%;
+  height:200px;
   margin: 0 10px 0 0;
 }
 
@@ -575,6 +576,10 @@ button, a {
   line-height: 200px;
   font-size: 80px;
   color:#fff;
+}
+
+.flickity-viewport {
+height: 600px !important;
 }
 
 /* tickets page style */
