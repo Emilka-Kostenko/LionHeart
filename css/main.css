@@ -93,7 +93,7 @@ button, a {
 
 .navigation_bar {
   width: var(--width-12col);
-  height: 90px;
+  height: 100px;
   padding: 20px 0 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,9 +101,11 @@ button, a {
 }
 
 .navigation_bar_logo {
-  color: var(--background-color-light);
-  display: flex;
-  align-items: center;
+  height: 70px;
+}
+
+.navigation_bar_logo img {
+  height: 80%;
 }
 
 .navigation_bar_menu {
@@ -364,6 +366,61 @@ button, a {
   grid-row: 4;
   color: var(--color-darkblue);
   font-size: 14px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscribe_popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.subscribe_popup p {
+  margin-top: 0;
+  color: #333;
+}
+
+.subscribe_popup_title {
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.subscribe_popup .close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.subscribe_popup .close:hover {
+  color: #06D85F;
+}
+.subscribe_popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
 
 /* Newsletter End */
@@ -990,6 +1047,14 @@ details p {
     width: var(--width-full);
   }
 
+  .box{
+    width: 70%;
+  }
+
+  .subscribe_popup{
+    width: 70%;
+  }
+
   .footer_main {
     width: var(--width-full);
   }
@@ -1207,6 +1272,14 @@ details p {
 
   .newsletter_subscribe_section ::placeholder {
     font-size: 10px;
+  }
+
+  .box{
+    width: 50%;
+  }
+
+  .subscribe_popup{
+    width: 50%;
   }
 
   .footer_main_text {
