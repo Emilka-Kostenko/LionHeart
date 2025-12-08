@@ -4,13 +4,9 @@
   /* dimension */
   --width-full: 100%;
   --width-12col: 1200px;
-  --width-tablet: 1000px;
-  --width-phone: 500px;
-
 
   /*grid settings*/
   --grid-gap: 10px;
-  --padding-default: 20px;
 
   /*colors*/
   --background-color-light: #DCEEF2;
@@ -49,7 +45,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 
 body, html {
@@ -1207,7 +1202,6 @@ details p {
 
 }
 
-
 /* Mobile */
 
 @media (width <= 600px) {
@@ -1231,11 +1225,6 @@ details p {
   .upcoming-february-calendar-shows{
     display: none;
   }
-
-  
-  
-
-  
 
   /* tickets page end */
 
