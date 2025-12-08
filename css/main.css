@@ -872,6 +872,7 @@ column-gap: var(--grid-gap);
   grid-template-rows: auto;
   column-gap: var(--grid-gap);
   padding-bottom: 60px;
+  max-width: 100%;
 }
 
 .where-to-find-us-header{
@@ -887,17 +888,25 @@ column-gap: var(--grid-gap);
 
 }
 
+
 .google-map-window{
   grid-column: 2 / span 5;
   width: 590px;
   height: 300px;
   grid-row: 2;
+  max-width: 100%;
+}
+.where-to-find-us-text{
+    grid-column: 8 / span 2;
+    grid-row: 2;
+    color: var(--color-darkblue);
+    display: flex;
+    flex-direction: column;
 }
 
-.parking-info{
-  grid-column: 8 / span 2;
-  grid-row: 2;
-  color: var(--color-darkblue);
+
+.adress-info{
+  padding-top: 20px;
 }
 
 .parking-info a{
@@ -925,7 +934,8 @@ column-gap: var(--grid-gap);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 40px 0;
+  padding: 80px 15px 40px 15px;
+  text-align: center;
   
 }
 .FAQ-text-container h2{
@@ -993,9 +1003,10 @@ details[open] .arrow {
 }
 
 details p {
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     opacity: 0.9;
+    font-size: 15px;
 }
 
 
@@ -1005,6 +1016,13 @@ details p {
 /* Responsive Design */
 
 /* Tablet */
+@media (width<460px){
+  .FAQ-text-container h1{
+    font-size: 16px;
+  }
+  .FAQ-text-container h2{
+    font-size: 14px;}
+}
 
 @media (width <= 1000px) {
 
@@ -1107,6 +1125,31 @@ details p {
     grid-column: 2 / span 10;
     
   }
+  .good-to-know-about-the-show
+  {
+    flex-direction: column;
+  }
+
+  .good-to-know-about-the-show-item{
+  
+  background-color: var(--color-lightgreen);
+  border-right: none;
+  border-bottom: solid var(--color-darkblue) 2px;
+  padding: 10px;
+  flex: 1;
+
+  }
+
+  .good-to-know-about-the-show-item h3
+  {
+    padding-bottom: 20px;
+  }
+
+  .good-to-know-about-the-show-item p
+  {
+    padding-bottom: 15px;
+  }
+
 
   .safety-tickets{
     grid-row: 2;
@@ -1133,6 +1176,38 @@ details p {
   }
 }
 
+@media (width < 970px){
+  /* .parking-info{
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    padding-top: 20px;
+    text-align: center;
+  } */
+  .where-to-find-us-text{
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    padding: 20px 0 0 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.adress-info{
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+
+  .google-map-window{
+  display: block;
+  width: 400px;
+  height: 150px;
+  grid-column: 3 / span 8;
+  align-items: center;
+  }
+
+}
+
+
 /* Mobile */
 
 @media (width <= 600px) {
@@ -1156,6 +1231,11 @@ details p {
   .upcoming-february-calendar-shows{
     display: none;
   }
+
+  
+  
+
+  
 
   /* tickets page end */
 
