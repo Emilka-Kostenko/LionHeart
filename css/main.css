@@ -29,7 +29,7 @@
   text-transform: uppercase;
   background-color: #39B865;
   border-color: transparent;
-  border-radius: 33px;
+  border-radius: 15px;
   width: 160px;
   height: 50px;
   color: var(--background-color-light);
@@ -111,7 +111,7 @@ button, a {
 .navigation_bar_menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: var(--background-color-light);
 }
@@ -255,7 +255,7 @@ button, a {
 .brochure_dowload_button button {
   background-color: var(--color-blue);
   border-color: transparent;
-  border-radius: 33px;
+  border-radius: 15px;
   width: 300px;
   height: 50px;
   color: var(--background-color-light);
@@ -342,16 +342,16 @@ button, a {
 }
 
 .newsletter_subscribe_section button {
-  border-radius: 6px;
+  border-radius: 15px;
   margin-left: 10px;
 }
 
 .newsletter_subscribe_section input {
   width: 450px;
-  height: 45px;
+  height: 50px;
   padding-left: 40px;
   border-color: transparent;
-  border-radius: 5px;
+  border-radius: 15px;
   background-image: url(../img/email_icon.png);
   background-repeat: no-repeat;
   background-position: 2% center;
@@ -726,7 +726,7 @@ table a{
   color: var(--color-darkblue);
   font-size: 12px;
   background-color: var(--background-color-light);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 3px 8px 3px 8px;
   margin-top: 5px;
   
@@ -1272,6 +1272,7 @@ details p {
   .newsletter_subscribe_section input {
     width: 50%;
     margin-bottom: 10px;
+    height: 40px;
   }
 
   .newsletter_subscribe_section ::placeholder {
@@ -1326,7 +1327,7 @@ details p {
     flex-direction: column;
   }
 
-  .slideshow_about_main {
-    width: 100%;
+  .slideshow_about {
+    display: none;
   }
 }
