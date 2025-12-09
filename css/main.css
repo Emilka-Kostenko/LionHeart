@@ -198,43 +198,6 @@ button, a {
   width: var(--width-full);
 }
 
-.slideshow_text {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  color: var(--background-color-light);
-  width: 330px;
-  right: 18%;
-  top: 40%;
-  text-align: right;
-}
-
-.slideshow_text p{
-  font-size: 17px;
-  color: var(--color-darkblue);
-  font-weight: 600;
-}
-
-.slideshow_brushstroke {
-  position: absolute;
-  right: 15%;
-  top: 30%;
-}
-
-.slideshow_brushstroke img {
-  height: 450px;
-}
-
-.slideshow_logo {
-  position: absolute;
-  right: 25%;
-  top: 25%;
-}
-
-.slideshow_logo img {
-  width: 150%;
-}
-
 /* Slideshow End */
 
 /* Brochure Start */
@@ -261,14 +224,20 @@ button, a {
 
 
 .brochure_text {
-  grid-column: 7 / span 6;
+  grid-column: 7 / span 5;
   grid-row: 3;
   color: var(--color-darkblue);
+}
+
+.brochure_text h2 {
+  font-weight: 700;
+  padding-bottom: 40px;
 }
 
 .brochure_text p {
   font-size: 18px;
   line-height: 2;
+  font-weight: 500;
 }
 
 .brochure_dowload_button {
@@ -352,9 +321,9 @@ button, a {
 }
 
 .newsletter_text h2 {
-  letter-spacing: 3px;
   padding-bottom: 5px;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .newsletter_stayconnected {
@@ -362,6 +331,7 @@ button, a {
   color: var(--color-green);
   font-weight: 900;
   padding-bottom: 5px;
+  font-family: "Cinzel", serif;
 }
 
 .newsletter_subscribe_section {
@@ -970,9 +940,9 @@ column-gap: var(--grid-gap);
 
 .FAQ-text-container h1{
   color: #F7F3EB;
-  font-weight: regular !important;
+  font-weight: 700;
   padding-bottom: 20px;
-
+  font-family: "Cinzel", serif;
 }
 
 .FAQ-text-container p{
@@ -1032,7 +1002,13 @@ details p {
 /* Responsive Design */
 
 /* Tablet */
-
+@media (width<460px){
+  .FAQ-text-container h1{
+    font-size: 16px;
+  }
+  .FAQ-text-container h2{
+    font-size: 14px;}
+}
 
 @media (width <= 1000px) {
 
@@ -1141,32 +1117,6 @@ details p {
 
 
 }
-
-@media (width < 970px){
-  .where-to-find-us-text{
-    grid-column: 2 / span 10;
-    grid-row: 3;
-    padding: 20px 0 0 0;
-    text-align: center;
-    flex-direction: row;
-    justify-content:space-evenly;
-}
-.adress-info{
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-
-  .google-map-window{
-  display: block;
-  width: 400px;
-  height: 150px;
-  grid-column: 3 / span 8;
-  align-items: center;
-  }
-
-}
-
 @media (width <= 830px) {
   .upcoming-february-calendar-shows{
     grid-row: 1;
@@ -1218,12 +1168,37 @@ details p {
 
 }
 
-
 @media (width >= 601px){
   .upcoming-february-calendar-shows-phone{
     display: none;
   }
 }
+
+@media (width < 970px){
+  .where-to-find-us-text{
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    padding: 20px 0 0 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.adress-info{
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+
+  .google-map-window{
+  display: block;
+  width: 400px;
+  height: 150px;
+  grid-column: 3 / span 8;
+  align-items: center;
+  }
+
+}
+
 /* Mobile */
 
 @media (width <= 600px) {
@@ -1429,12 +1404,4 @@ details p {
   .slideshow_about {
     display: none;
   }
-}
-
-@media (width<460px){
-  .FAQ-text-container h1{
-    font-size: 16px;
-  }
-  .FAQ-text-container h2{
-    font-size: 14px;}
 }
