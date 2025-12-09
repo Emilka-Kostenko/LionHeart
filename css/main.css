@@ -1023,13 +1023,7 @@ details p {
 /* Responsive Design */
 
 /* Tablet */
-@media (width<460px){
-  .FAQ-text-container h1{
-    font-size: 16px;
-  }
-  .FAQ-text-container h2{
-    font-size: 14px;}
-}
+
 
 @media (width <= 1000px) {
 
@@ -1126,6 +1120,32 @@ details p {
 
 
 }
+
+@media (width < 970px){
+  .where-to-find-us-text{
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    padding: 20px 0 0 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.adress-info{
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+
+  .google-map-window{
+  display: block;
+  width: 400px;
+  height: 150px;
+  grid-column: 3 / span 8;
+  align-items: center;
+  }
+
+}
+
 @media (width <= 830px) {
   .upcoming-february-calendar-shows{
     grid-row: 1;
@@ -1177,37 +1197,12 @@ details p {
 
 }
 
+
 @media (width >= 601px){
   .upcoming-february-calendar-shows-phone{
     display: none;
   }
 }
-
-@media (width < 970px){
-  .where-to-find-us-text{
-    grid-column: 2 / span 10;
-    grid-row: 3;
-    padding: 20px 0 0 0;
-    text-align: center;
-    flex-direction: row;
-    justify-content:space-evenly;
-}
-.adress-info{
-  padding-top: 0px;
-  padding-left: 10px;
-}
-
-
-  .google-map-window{
-  display: block;
-  width: 400px;
-  height: 150px;
-  grid-column: 3 / span 8;
-  align-items: center;
-  }
-
-}
-
 /* Mobile */
 
 @media (width <= 600px) {
@@ -1405,4 +1400,12 @@ details p {
   .slideshow_about {
     display: none;
   }
+}
+
+@media (width<460px){
+  .FAQ-text-container h1{
+    font-size: 16px;
+  }
+  .FAQ-text-container h2{
+    font-size: 14px;}
 }
