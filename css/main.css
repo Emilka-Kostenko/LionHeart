@@ -36,7 +36,7 @@
 
 .base_button a {
   text-decoration: none;
-  color: var(--background-color-light);
+  color: white;
 }
 
 
@@ -274,10 +274,6 @@ button, a {
   margin-right: 10px;
 }
 
-.brochure_social_buttons p {
-  color: var(--background-color-dark-transparent);
-}
-
 .brochure_common_button {
   height: 45px;
   width: 45px;
@@ -328,7 +324,7 @@ button, a {
 
 .newsletter_stayconnected {
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-blue);
   font-weight: 900;
   padding-bottom: 5px;
   font-family: "Cinzel", serif;
@@ -1020,6 +1016,11 @@ details p {
 
   .navigation_bar_menu p{
     padding: 0 10px 0 10px;
+  }
+
+  .navigation_bar_menu a:hover {
+    text-decoration: underline;
+    font-weight: 700;
   }
 
   .slideshow_brushstroke {
