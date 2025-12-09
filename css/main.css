@@ -1184,12 +1184,6 @@ details p {
 }
 
 @media (width < 970px){
-  /* .parking-info{
-    grid-column: 2 / span 10;
-    grid-row: 3;
-    padding-top: 20px;
-    text-align: center;
-  } */
   .where-to-find-us-text{
     grid-column: 2 / span 10;
     grid-row: 3;
