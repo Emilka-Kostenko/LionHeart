@@ -39,6 +39,10 @@
   color: white;
 }
 
+.base_button:hover {
+  width: 180px;
+  transition: all 0.3s ease-in-out;
+}
 
 /* reset css*/
 * {
@@ -114,6 +118,11 @@ button, a {
   color: var(--background-color-light);
 }
 
+.navigation_bar_menu a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 /* Top Navigation Bar End */
 
 /* Bottom Navigation Bar Start */
@@ -141,6 +150,12 @@ button, a {
 .bottom_navigation_bar_social_common{
   height: 50px;
   width: 50px;
+}
+
+.bottom_navigation_bar_social_common:hover {
+  height: 60px;
+  width: 60px;
+  transition: all 0.3s ease-in-out;
 }
 
 .bottom_navigation_bar_social {
@@ -260,6 +275,12 @@ button, a {
   font-size: 17px;
 }
 
+.brochure_dowload_button button:hover {
+  width: 320px;
+  height: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
 .brochure_social_buttons {
   grid-column: 8 / span 5;
   grid-row: 5;
@@ -281,6 +302,12 @@ button, a {
   padding: 0 20px 0 20px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.brochure_common_button:hover {
+  height: 55px;
+  width: 55px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Brochure End */
@@ -446,6 +473,11 @@ button, a {
   color: var(--background-color-light);
 }
 
+.footer_main_text a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
 .footer_main_copyright {
   color: #DCEEF280;
   display: flex;
@@ -599,6 +631,11 @@ button, a {
   align-items: center;
   margin-bottom: 20px;
   color: var(--color-darkblue);
+}
+
+.slideshow_about_title h2 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .slideshow_about_title p {
