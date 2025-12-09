@@ -68,8 +68,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
-
 h3 {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
@@ -654,12 +652,11 @@ height: 600px !important;
 }
 
 .upcoming-theatre-events-calendar{
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: auto;
-column-gap: var(--grid-gap);
-padding: 95px 0 95px 0;
-
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: var(--grid-gap);
+  padding: 95px 0 95px 0;
 }
 
 .safety-tickets{
@@ -864,8 +861,6 @@ justify-self: center;
 border: none;
 }
 
-
-
 .helpful_info{
 display: grid;
 grid-template-columns: repeat(12, 1fr);
@@ -892,9 +887,7 @@ column-gap: var(--grid-gap);
   color: var(--color-darkblue);
   padding: 60px 0 35px 0;
   grid-row: 1;
-
 }
-
 
 .google-map-window{
   grid-column: 2 / span 5;
@@ -903,6 +896,7 @@ column-gap: var(--grid-gap);
   grid-row: 2;
   max-width: 100%;
 }
+
 .where-to-find-us-text{
     grid-column: 8 / span 2;
     grid-row: 2;
@@ -910,7 +904,6 @@ column-gap: var(--grid-gap);
     display: flex;
     flex-direction: column;
 }
-
 
 .adress-info{
   padding-top: 20px;
@@ -930,10 +923,10 @@ column-gap: var(--grid-gap);
 }
 
 .FAQ{
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: auto;
-column-gap: var(--grid-gap);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: var(--grid-gap);
 }
 
 .FAQ-text-container {
@@ -945,6 +938,7 @@ column-gap: var(--grid-gap);
   text-align: center;
   
 }
+
 .FAQ-text-container h2{
   color: var(--color_lightblue);
   font-size: 24px;
@@ -965,7 +959,8 @@ column-gap: var(--grid-gap);
   padding-bottom: 20px ;
   text-align: center;
 }
-.FAQ-quastions{
+
+.FAQ-questions{
   grid-column: 3 / span 8;
   display: flex;
   justify-content: center;
@@ -984,41 +979,33 @@ column-gap: var(--grid-gap);
 }
 
 .FAQ summary {
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    color: white;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
 }
-
 
 summary::marker {
-    display: none;
+  display: none;
 }
 
-
- .arrow {
-    transition: transform 0.3s ease;
+.arrow {
+  transition: transform 0.3s ease;
 }
-
-
 
 details[open] .arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 details p {
-    margin-top: 15px;
-    color: white;
-    opacity: 0.9;
-    font-size: 15px;
+  margin-top: 15px;
+  color: white;
+  opacity: 0.9;
+  font-size: 15px;
 }
-
-
-
-
 
 /* Responsive Design */
 
