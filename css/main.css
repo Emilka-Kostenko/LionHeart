@@ -29,7 +29,7 @@
   width: 160px;
   height: 50px;
   color: var(--background-color-light);
-  box-shadow: 5px 5px 15px 0 var(--background-color-dark-transparent);
+  box-shadow: 3px 3px 3px 0 var(--background-color-dark-transparent);
   cursor: pointer;
   font-weight: 700;
 }
@@ -270,7 +270,7 @@ button, a {
   width: 300px;
   height: 50px;
   color: var(--background-color-light);
-  box-shadow: 5px 5px 10px 0 var(--background-color-dark-transparent);
+  box-shadow: 3px 3px 5px 0 var(--background-color-dark-transparent);
   cursor: pointer;
   font-size: 17px;
 }
@@ -510,8 +510,7 @@ button, a {
 }
 
 .video_section_background {
-  width: 95%;
-  height: 95%;
+  width: 50%;
 }
 
 .video_section_play_icon {
@@ -1408,10 +1407,6 @@ details p {
   }
 
   /* About Page */
-
-  .video_section_background {
-    width: 55%;
-  }
 
   .video_section {
     height: 400px;
