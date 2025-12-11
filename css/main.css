@@ -176,8 +176,8 @@ button, a {
 
   
 .bottom_navigation_bar_flag_common {
-  width: 36px;
-  height: 26px;
+  width: 80%;
+  height: 80%;
 }
 
 .bottom_navigation_bar_grid button {
@@ -1296,11 +1296,6 @@ details p {
 
   .bottom_navigation_bar_social {
     grid-column: 2 / span 4;
-  }
-
-  .bottom_navigation_bar_flag_common {
-    height: 16px;
-    width: 26px;
   }
 
   .bottom_navigation_bar_flags {
