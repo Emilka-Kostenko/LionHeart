@@ -1299,7 +1299,7 @@ details p {
   }
 
   .brochure_section {
-    height: 800px;
+    height: fit-content;
   }
 
   .slideshow_text {
