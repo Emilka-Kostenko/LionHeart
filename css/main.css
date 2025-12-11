@@ -354,7 +354,7 @@ button, a {
 
 .newsletter_stayconnected {
   text-transform: uppercase;
-  color: var(--color-blue);
+  color: var(--background-color-dark-bg);
   font-weight: 900;
   padding-bottom: 5px;
   font-family: "Cinzel", serif;
@@ -367,6 +367,7 @@ button, a {
 .newsletter_subscribe_section button {
   border-radius: 15px;
   margin-left: 10px;
+  background-color: var(--color-blue);
 }
 
 .newsletter_subscribe_section input {
