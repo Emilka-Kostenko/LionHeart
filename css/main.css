@@ -103,6 +103,7 @@ button, a {
 
 .navigation_bar_logo img {
   height: 80%;
+  height: auto;
 }
 
 .navigation_bar_menu {
@@ -211,6 +212,7 @@ button, a {
 
 .slideshow_background img {
   width: var(--width-full);
+  height: auto;
 }
 
 /* Slideshow End */
@@ -239,6 +241,7 @@ button, a {
 
 .brochure_image img {
   width: 80%;
+  height: auto;
 }
 
 .brochure_text {
@@ -298,6 +301,11 @@ button, a {
   margin-right: 10px;
 }
 
+.brochure_share_icon img {
+  width: auto;
+  height: auto;
+}
+
 .brochure_common_button {
   height: 45px;
   width: 45px;
@@ -311,6 +319,11 @@ button, a {
   height: 55px;
   width: 55px;
   transition: all 0.3s ease-in-out;
+}
+
+.brochure_common_button img {
+  width: auto;
+  height: auto;
 }
 
 /* Brochure End */
