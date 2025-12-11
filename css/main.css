@@ -237,6 +237,9 @@ button, a {
   grid-row: 2 / span 5;
 }
 
+.brochure_image img {
+  width: 80%;
+}
 
 .brochure_text {
   grid-column: 7 / span 5;
@@ -1096,6 +1099,10 @@ details p {
     width: 35px;
   }
 
+  .brochure_image img {
+    width: 100%;
+  }
+
   .newsletter_grid {
     width: var(--width-full);
   }
@@ -1339,10 +1346,6 @@ details p {
     grid-column: 1 / span 12;
     display: flex;
     justify-content: center;
-  }
-
-  .brochure_image img {
-    height: 400px;
   }
 
   .brochure_text {
