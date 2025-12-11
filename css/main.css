@@ -496,7 +496,7 @@ button, a {
   }
 
 .footer_main_copyright {
-  color: #DCEEF280;
+  color: var(--background-color-light);
   display: flex;
   justify-content: center;
   grid-row: 2;
