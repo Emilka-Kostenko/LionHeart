@@ -26,12 +26,13 @@
   background-color: #398557;
   border-color: transparent;
   border-radius: 15px;
-  width: 160px;
-  height: 50px;
+  width: 200px;
+  height: 80px;
   color: var(--background-color-light);
   box-shadow: 3px 3px 3px 0 var(--background-color-dark-transparent);
   cursor: pointer;
   font-weight: 700;
+  display: inline-flex;
 }
 
 .base_button a {
@@ -116,6 +117,7 @@ button, a {
 .navigation_bar_menu a {
   text-decoration: none;
   color: var(--background-color-light);
+  font-size: 20px;
 }
 
 .navigation_bar_menu a:hover {
@@ -186,7 +188,11 @@ button, a {
 .hover_button {
   position: absolute;
   bottom: 125%;
-  right: 5%
+  right: 5%;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .hover_button:hover {
@@ -459,6 +465,13 @@ button, a {
   overflow: auto;
 }
 
+.subscribe_button {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
 /* Newsletter End */
 
 /* Footer Section Start */
@@ -667,7 +680,6 @@ button, a {
 }
 
 .gallery-cell {
-  width: 66%;
   height:200px;
   margin: 0 10px 0 0;
 }
@@ -1087,6 +1099,9 @@ details p {
     width: 100%
   }
 
+  .brochure_section {
+    height: 1200px;
+  }
   .brochure_main {
     width: var(--width-full);
   }
@@ -1286,6 +1301,7 @@ details p {
     width: 120px;
     height: 40px;
     font-size: 12px;
+    display: inline-flex;
   }
 
   .bottom_navigation_bar_social_common {
