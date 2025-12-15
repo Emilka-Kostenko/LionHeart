@@ -385,7 +385,7 @@ button, a {
 .newsletter_subscribe_section button {
   border-radius: 15px;
   margin-left: 10px;
-  background-color: var(--color-blue);
+  
 }
 
 .newsletter_subscribe_section input {
