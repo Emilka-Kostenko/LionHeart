@@ -1305,6 +1305,10 @@ details p {
     width: 30px;
   }
 
+  .navigation_bar_menu a {
+    font-size: 14px;
+  }
+
   .bottom_navigation_bar_social {
     grid-column: 2 / span 4;
   }
